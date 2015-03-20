@@ -21,6 +21,10 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
+	 <!-- FONT
+	 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	 <link href='http://fonts.googleapis.com/css?family=Dosis:300,500,600,800' rel='stylesheet' type='text/css'>
+
 	<!-- css  indispensables -->
 	
 	<link rel="stylesheet" href="<?php bloginfo('template_url' ); ?>/library/css/normalize.css">
@@ -31,6 +35,7 @@
 
 	<link rel="stylesheet" href="<?php bloginfo('template_url' ); ?>/library/css/owl-carousel.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url' ); ?>/library/css/owl-theme.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_url' ); ?>/library/css/tinycarousel.css">
 	
 	<!--/ css adicionales -->
 
@@ -41,14 +46,18 @@
 </head>
 <body>
 	
-	<header>
-        <nav id="menu"><a class="nav-mobile" id="nav-mobile" href="#"></a>
+	<div id="esquina-verde"></div>
+
+	<header class="container">
+        <a class="five columns" href="#"><img id="logo" class="twelve columns" src="<?php bloginfo('template_url' ); ?>/library/img/logo.png" alt=""></a>
+        <nav id="menu" class="offset-by-two five columns">
+            <a href="#" class="nav-mobile" id="nav-mobile"></a>
             <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Tutoriales</a></li>
-            <li><a href="#">Wordpress</a></li>
-            <li><a href="#">Recursos Web</a></li>
-            <li><a href="#">Demos</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contactenos</a></li>
+                
             </ul>
         </nav>
     </header>

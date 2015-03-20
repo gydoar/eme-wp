@@ -1,81 +1,161 @@
+/* Header */
 
-    /* Definimos un ancho fluido y una altura fija para nuestro menú */
-header{
-    background: #22282e;
-    height:60px;
-    position: relative;
-    width: 100%;
+#menu ul{
+    margin-left: 60px;
+    margin-top: 10px;
 }
- 
-/* El logo sera flotado a la izquierda */
-#logo{
-    background: url(logo.png) no-repeat 0 0;
+#menu ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+#menu ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+#menu ul li a:hover{
+    color: #3f3e3e;
+}
+header.container{
+    z-index: 2; 
+    margin-top: -42px;
+}
+#owl-demo .item img{
     display: block;
-    float: left;
-    margin: 6px 10px 0;
-    width: 82px;
-    height: 46px;
-    text-indent: -9999px
+    width: 100%;
+    height: auto;
 }
- 
-/* Nuestro nav con id #menu lo flotaremos a la derecha*/
-#menu{ float: right;}
- 
-    /* Quitamos estilos por defecto de el tag UL */
-    #menu ul{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        font-size: 14px;
-    }
- 
-        /* Centramos y ponemos los textos en mayuscula */
-        #menu li{
-            display: block;
-            float: left;
-            text-transform: uppercase;
-            text-align: center;
-            margin-bottom: 0px;
-        }
- 
-            /* Damos estilo a nuestros enlaces */
-            #menu li a{
-                display: block;
-                color: #fff;
-                text-decoration: none;
-                height: 60px;
-                line-height: 60px;
-                padding: 0 26px;
-            }
-                #menu li a:hover{
-                    background: #151a1e;
-                    color: #ffc700;
-                }
- 
-/* Estilos #nav-mobile y lo ocultamos */
-#nav-mobile{
-    display: none;
-    background: url(library/img/nav.png) no-repeat center center;
-    float: right;
-    width: 60px;
-    height: 60px;
+#owl-demo{
+    margin-top: -112px;
     position: absolute;
-    right: 0;
-    top:0;
-    opacity: .6;
+    z-index: 1;
+}
+
+#esquina-verde{
+    background: url(library/img/esquina-verde.png) no-repeat;
+    height: 62px;
+    z-index: 0;
+    position: relative;
+    background-position-x:600px; 
+    z-index: 2;
 }
  
-    /* Agregaremos esta clase a #nav-mobile, cuando el menu mobile haya sido desplegado */
-    #nav-mobile.nav-active{
-        opacity: 1;
-    }
+/* contenido */
+#contenido{
+    padding-top: 330px;
+}
+#contenido h2{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0 10px;
+    color: #3a3a3a;
+}
+#contenido p{
+    margin-top: 10px;
+    line-height: 16px;
+    padding: 0 10px;
+    color: #8b8b8b;
+    text-align: justify;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
 
+}
+#contenido h2{
+    line-height: 18px;
+    text-align: left;
+    margin-left: -10px;
+}
+
+#contenido a{
+    text-decoration: none;
+    color: #b3cc57;
+    padding: 0 10px;
+}
+#contenido a:nth-child(6){
+    margin-top: 3000px;
+}
+#contenido a, #contenido a img{
+    vertical-align: middle;
+}
+
+/* Personas */
+#personas{
+    background: #ffffff;
+    background-image: url(library/img/handmadepaper.png);
+    margin-top: 30px;
+    padding-top: 60px;
+}
+#personas h3{
+    font-size: 24px;
+    margin-bottom: 0px;
+    color: #3a3a3a;
+    font-weight: 500;
+}
+
+#personas h3, #personas h3 img{
+    vertical-align:middle;
+}
+#personas span{
+    margin-left: 60px;
+    margin-top: -20px;
+    position: absolute;
+    color: #818181;
+}
+#personas p{
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #818181;
+    padding-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+}
+
+
+/* footer */
 footer{
-	text-align: center;
+    background: #3a3a3a;
+    height: auto;
+    text-align: center;
+    padding: 30px 0px;
+    color: #ffffff;
+}
+footer p{
+    margin: 0px;
+    letter-spacing: 0.5px;
+    font-size: 16px;
 }
 footer a{
-	text-decoration: none;
-	color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
+#redes{
+    float: right;
+    margin-top: -56px;
+}
+ul#redes li{
+    list-style: none;
+    display: inline-block;
+}
+ul#redes, footer{
+vertical-align: middle;
+}
+
+/* Copyright */
+#copy{
+    font-size: 12px;
+    text-align: center;
+    background: #000000;
+    color: #ffffff;
+    padding: 10px 0px;
+}
+#copy p{
+    margin: 0px;
+    letter-spacing: 1px;
+}
+#copy a{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 
@@ -85,22 +165,20 @@ footer a{
     width: 100%;
     height: auto;
 }
-/* #Media Queries
-================================================== */
 
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+/* Smaller than standard 960 (devices and browsers) */
+    @media only screen and (max-width: 959px) {}
 
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+    /* Tablet Portrait size to standard 960 (devices and browsers) */
+    @media only screen and (min-width: 768px) and (max-width: 959px) {}
 
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+    /* All Mobile Sizes (devices and browser) */
+    @media only screen and (max-width: 767px) {}
 
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
-	
-	/* mostramos #nav-mobile */
+    /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+    /* mostramos #nav-mobile */
     #nav-mobile{ display: block; }
  
     /* Fijamos nuestro nav en 100% ancho y dejamos de flotarlo */
@@ -137,11 +215,11 @@ footer a{
             max-height: 400px;
             transition: max-height .40s;
         }
-	}
+    }
 
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {
-	/* mostramos #nav-mobile */
+    /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+    @media only screen and (max-width: 479px) {
+    /* mostramos #nav-mobile */
     #nav-mobile{ display: block; }
  
     /* Fijamos nuestro nav en 100% ancho y dejamos de flotarlo */
@@ -178,5 +256,5 @@ footer a{
             max-height: 400px;
             transition: max-height .40s;
         }
-	}
-	}
+    }
+    }

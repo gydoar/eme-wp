@@ -1,11 +1,28 @@
+<!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>Calle 38D Sur No. 72Q - 71 piso 1 / Bogotá - Colombia</p>
+        <a href="mailto:eme@eme-construcciones.com">eme@eme-construcciones.com</a>
+        <p>804 4657 - 319 2671554</p>
+        <ul id="redes">
+          <li><a href="#"><img src="<?php bloginfo('template_url' ); ?>/library/img/facebook.png" alt=""></a></li>
+          <li><a href="#"><img src="<?php bloginfo('template_url' ); ?>/library/img/twitter.png" alt=""></a></li>
+        </ul>
+      </div>
+    </footer>
+    <!--/ Footer -->
 
+    <!-- Copyright -->
+    <div id="copy">
+      <div class="container">
+         <p><strong>&copy; EME CONSTRUCCIONES TÉCNICAS INTEGRALES S.A.S&nbsp;&nbsp;</strong>
+      HECHO CON&nbsp;<img width="10px" src="<?php bloginfo('template_url' ); ?>/library/img/corazon.png" alt="">&nbsp;POR <a target="_blank" href="http://suwwweb.com"> SUWWWEB S.A.S</a></p>
+      </div>
+    </div>
+    <!--/Copyright -->
 
-
-
-<footer>
-	<p>HECHO CON&nbsp;<img width="11" src="<?php bloginfo('template_url' ); ?>/library/img/corazon.png" alt="">&nbsp;POR <a target="_blank" href="http://suwwweb.com">SUWWWEB</a></p>
-</footer>
-
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
 
@@ -43,27 +60,35 @@
 <script src="<?php bloginfo('template_url' ); ?>/library/js/owl-carousel.js"></script>
 
 <script>
-	$(document).ready(function() {
+    $(document).ready(function() {
  
-	  $("#owl-demo").owlCarousel({
-	 
-	      navigation : true, // Show next and prev buttons
-	      slideSpeed : 300,
-	      paginationSpeed : 400,
-	      singleItem:true
-	 
-	      // "singleItem:true" is a shortcut for:
-	      // items : 1, 
-	      // itemsDesktop : false,
-	      // itemsDesktopSmall : false,
-	      // itemsTablet: false,
-	      // itemsMobile : false
-	 
-	  });
-	 
-	});
-</script>
+    $("#owl-demo").owlCarousel({
+   
+        navigation : false, // Show next and prev buttons
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true
+   
+        // "singleItem:true" is a shortcut for:
+        // items : 1, 
+        // itemsDesktop : false,
+        // itemsDesktopSmall : false,
+        // itemsTablet: false,
+        // itemsMobile : false
+   
+    });
+   
+  });
+  </script>
 
+<script src="<?php bloginfo('template_url' ); ?>/library/js/jquery.tinycarousel.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function()
+    {
+      $('#slider1').tinycarousel();
+    });
+  </script>
 <!--/ Scripts Adiconales -->
 
 <?php wp_footer(); ?>
