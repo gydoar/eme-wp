@@ -1,32 +1,73 @@
-/* Header */
-
-#menu ul{
-    margin-left: 60px;
-    margin-top: 10px;
-}
-#menu ul li{
-    display: inline-block;
-    margin-right: 10px;
-}
-#menu ul li a{
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-}
-#menu ul li a:hover{
-    color: #3f3e3e;
-}
-header.container{
-    z-index: 2; 
-    margin-top: -42px;
-}
-#owl-demo .item img{
-    display: block;
+header{
+    height:60px;
+    position:relative;
     width: 100%;
-    height: auto;
+    z-index: 100;
 }
+ 
+/* El logo sera flotado a la izquierda */
+
+#logo1{
+    position: absolute;
+    z-index: 200;
+    margin-top: -50px;
+}
+ 
+/* Nuestro nav con id #menu lo flotaremos a la derecha*/
+#menu{ float: right;
+    margin-top: -60px;
+}
+ 
+    /* Quitamos estilos por defecto de el tag UL */
+    #menu ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 14px;
+    }
+ 
+        /* Centramos y ponemos los textos en mayuscula */
+        #menu li{
+            display: block;
+            float: left;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+ 
+            /* Damos estilo a nuestros enlaces */
+            #menu li a{
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                height: 60px;
+                line-height: 60px;
+                padding: 0 26px;
+            }
+                #menu li a:hover{
+                    background: #151a1e;
+                    color: #ffc700;
+                }
+ 
+/* Estilos #nav-mobile y lo ocultamos */
+#nav-mobile{
+    display: none;
+    background: url(library/img/nav.png) no-repeat center center;
+    float: right;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top:0;
+    opacity: .6;
+}
+ 
+    /* Agregaremos esta clase a #nav-mobile, cuando el menu mobile haya sido desplegado */
+    #nav-mobile.nav-active{
+        opacity: 1;
+    }
 #owl-demo{
-    margin-top: -112px;
+    margin-top: -122px;
     position: absolute;
     z-index: 1;
 }
@@ -38,6 +79,20 @@ header.container{
     position: relative;
     background-position-x:600px; 
     z-index: 2;
+}
+
+
+/* Estilos #nav-mobile y lo ocultamos */
+#nav-mobile{
+    display: none;
+    background: url(library/img/nav.png) no-repeat center center;
+    float: right;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top:0;
+    opacity: .6;
 }
  
 /* contenido */
@@ -170,10 +225,120 @@ vertical-align: middle;
     @media only screen and (max-width: 959px) {}
 
     /* Tablet Portrait size to standard 960 (devices and browsers) */
-    @media only screen and (min-width: 768px) and (max-width: 959px) {}
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+
+        /* mostramos #nav-mobile */
+    #nav-mobile{ display: block; }
+ 
+    /* Fijamos nuestro nav en 100% ancho y dejamos de flotarlo */
+    #menu{
+        width: 100%;
+        float: none;
+        padding-top: 60px;
+        background: #ffffff;
+    }
+ 
+        /* Convertimos nuestra lista de enlaces en un menú horizontal */
+        #menu ul{
+            box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            max-height: 0;
+            overflow: hidden;
+        }
+            /* estilos para los LI del menu */
+            #menu li{
+                background: #33363b;
+                border-bottom: 0;
+                float: none;
+            }
+                /* Quitamos el borde del ultimo item del menú */
+                #menu li:last-child{ border-bottom: 0;}
+ 
+                #menu li a{
+                    padding: 15px 0;
+                    height: auto;
+                    line-height: normal;
+                }
+                #menu li a:hover{background:#2a2d33;}
+ 
+        /* Agregamos una animación al despligue del menú */
+        #menu ul.open-menu{
+            max-height: 400px;
+            transition: max-height .40s;
+        }
+        #owl-demo{
+            margin-top: 0px;
+        }
+         #logo{
+            background: url(library/img/logo-mobile.png) no-repeat 0 0;
+            display: block;
+            float: left;
+            margin: 6px 10px 0;
+            width: 176px;
+            height: 43px;
+            text-indent: -9999px
+        }
+        #logo1{
+            display: none;
+        }
+    }
 
     /* All Mobile Sizes (devices and browser) */
-    @media only screen and (max-width: 767px) {}
+    @media only screen and (max-width: 767px) {
+       
+        /* mostramos #nav-mobile */
+    #nav-mobile{ display: block; }
+ 
+    /* Fijamos nuestro nav en 100% ancho y dejamos de flotarlo */
+    #menu{
+        width: 100%;
+        float: none;
+        padding-top: 60px;
+        background: #ffffff;
+    }
+ 
+        /* Convertimos nuestra lista de enlaces en un menú horizontal */
+        #menu ul{
+            box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            max-height: 0;
+            overflow: hidden;
+        }
+            /* estilos para los LI del menu */
+            #menu li{
+                background: #33363b;
+                border-bottom: 0;
+                float: none;
+            }
+                /* Quitamos el borde del ultimo item del menú */
+                #menu li:last-child{ border-bottom: 0;}
+ 
+                #menu li a{
+                    padding: 15px 0;
+                    height: auto;
+                    line-height: normal;
+                }
+                #menu li a:hover{background:#2a2d33;}
+ 
+        /* Agregamos una animación al despligue del menú */
+        #menu ul.open-menu{
+            max-height: 400px;
+            transition: max-height .40s;
+        }
+        #owl-demo{
+            margin-top: 0px;
+        }
+         #logo{
+            background: url(library/img/logo-mobile.png) no-repeat 0 0;
+            display: block;
+            float: left;
+            margin: 6px 10px 0;
+            width: 176px;
+            height: 43px;
+            text-indent: -9999px
+        }
+         #logo1{
+            display: none;
+        }
+    }
 
     /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
     @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -186,6 +351,7 @@ vertical-align: middle;
         width: 100%;
         float: none;
         padding-top: 60px;
+        background: #ffffff;
     }
  
         /* Convertimos nuestra lista de enlaces en un menú horizontal */
@@ -215,6 +381,22 @@ vertical-align: middle;
             max-height: 400px;
             transition: max-height .40s;
         }
+        #owl-demo{
+            margin-top: 0px;
+        }
+         #logo{
+            background: url(library/img/logo-mobile.png) no-repeat 0 0;
+            display: block;
+            float: left;
+            margin: 6px 10px 0;
+            width: 176px;
+            height: 43px;
+            text-indent: -9999px
+        }
+         #logo1{
+            display: none;
+        }
+
     }
 
     /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -224,6 +406,8 @@ vertical-align: middle;
  
     /* Fijamos nuestro nav en 100% ancho y dejamos de flotarlo */
     #menu{
+        margin-bottom: 80px;
+        background: #ffffff;
         width: 100%;
         float: none;
         padding-top: 60px;
@@ -256,5 +440,24 @@ vertical-align: middle;
             max-height: 400px;
             transition: max-height .40s;
         }
+
+
+         #logo{
+            background: url(library/img/logo-mobile.png) no-repeat 0 0;
+            display: block;
+            float: left;
+            margin: 6px 10px 0;
+            width: 176px;
+            height: 43px;
+            text-indent: -9999px
+        }
+        #owl-demo{
+            margin-top: 0px;
+        }
+        #logo1{
+            display: none;
+        }
     }
-    }
+
+   
+ 

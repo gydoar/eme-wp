@@ -47,17 +47,21 @@
 <body>
 	
 	<div id="esquina-verde"></div>
-
-	<header class="container">
-        <a class="five columns" href="#"><img id="logo" class="twelve columns" src="<?php bloginfo('template_url' ); ?>/library/img/logo.png" alt=""></a>
-        <nav id="menu" class="offset-by-two five columns">
-            <a href="#" class="nav-mobile" id="nav-mobile"></a>
+	<div class="container">
+		<a id="logo1" href="#"><img src="<?php bloginfo('template_url' ); ?>/library/img/logo.png" alt=""></a>
+	</div>
+	<header>
+      <a id="logo" href="#"></a>
+        <nav id="menu"><a class="nav-mobile" id="nav-mobile" href="#"></a>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contactenos</a></li>
-                
+	            <li><a href="#">Inicio</a></li>
+	            <li><a href="#">Nosotros</a></li>
+	            <li><a href="#">Servicios</a>
+					<ul>
+						<li><a href="hola">hola</a></li>
+					</ul>
+	            </li>
+	            <li><a href="#">Contactenos</a></li>
             </ul>
         </nav>
     </header>
