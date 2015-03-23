@@ -39,7 +39,7 @@
             <p> Realización del presupuesto y programación de obra.</p>
             <p> Construcción de obra y entrega final al cliente.</p>
             <br><br>
-            <a class="buttom" href="#"> Cotice con nosotros </a>
+            <a class="buttom" href="<?php echo home_url('/contactenos' ); ?>"> Cotice con nosotros </a>
            </div>
           </div>
       </div>

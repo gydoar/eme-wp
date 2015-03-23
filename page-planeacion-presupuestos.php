@@ -86,7 +86,7 @@
            </div>
            <div class="five columns spacing">
             <br><br>
-            <a class="buttom" href="">Cotice con nosotros</a>
+            <a class="buttom" href="<?php echo home_url('/contactenos' ); ?>">Cotice con nosotros</a>
            </div>
           </div>
           
