@@ -411,6 +411,29 @@ function optionsframework_options() {
 		'std' => 'Remodelación de espacios y entrega final al cliente.',
 		'type' => 'text'
 	);
+
+	//Planeacion de presupuestos
+	$options[] = array(
+		'name' => __( 'PLANEACIÓN DE PRESUPUESTOS', 'theme-textdomain' ),
+		'type' => 'heading'
+	);
+
+	$options[] = array(
+		'name' => __( 'Imagen Planeacion y Presupuestos', 'theme-textdomain' ),
+		'desc' => __( '', 'theme-textdomain' ),
+		'id' => 'img-pla-pres',
+		'type' => 'upload'
+	);
+
+	$options[] = array(
+		'name' => __( 'Texto Remodelacion y Mantenimiento', 'theme-textdomain' ),
+		'desc' => __( '', 'theme-textdomain' ),
+		'id' => 'txt-rem-mant',
+		'std' => 'Remodelación completa de su vivienda, oficina o espacio comercial, Reformas puntuales de su cocina, baño, piso, Cielorraso, iluminación, pintura de muros, Ampliaciones de espacios y Adecuaciones Eléctricas e hidrosanitarias.
+			</br></br>
+			Mantenimiento y rehabilitación de viviendas y edificios, impermeabilización de cubiertas y patios, pinturas exteriores de fachadas, tratamiento de humedades, habilitación de bajantes, desagües, fontanería en general.',
+		'type' => 'textarea'
+	);
 	// contacto
 	$options[] = array(
 		'name' => __( 'CONTACTO', 'theme-textdomain' ),

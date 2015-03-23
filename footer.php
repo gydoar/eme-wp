@@ -68,7 +68,7 @@
         slideSpeed : 300,
         paginationSpeed : 400,
         singleItem:true,
-        AutoPlay: 5000
+        autoPlay: 5000
         // "singleItem:true" is a shortcut for:
         // items : 1, 
         // itemsDesktop : false,
