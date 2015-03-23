@@ -23,14 +23,13 @@ header{
         margin: 0;
         padding: 0;
         list-style: none;
-        font-size: 14px;
+        font-size: 16px;
     }
  
         /* Centramos y ponemos los textos en mayuscula */
         #menu li{
             display: block;
             float: left;
-            text-transform: uppercase;
             text-align: center;
             margin-bottom: 0px;
         }
@@ -45,9 +44,40 @@ header{
                 padding: 0 26px;
             }
                 #menu li a:hover{
-                    background: #151a1e;
-                    color: #ffc700;
+                    
+                    color: #000000;
                 }
+            #menu li ul {
+                display:none;
+                position:absolute;
+                background: rgba(179,204,87,0.9);
+                padding: 0;
+                height: 150px;
+            }
+            #menu li:hover > ul {
+                display:block;
+            }
+            #menu li ul li {
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
+                text-align: left;
+                font-size: 14px;
+                height: 40px;
+                padding-bottom: 10px;
+
+            }
+            #menu li ul li a:hover{
+                background: rgba(179,204,87,0.9);
+                width: 100%;
+                height: 40px;
+                padding-bottom: 10px;
+            }
+            #menu li ul li ul {
+                
+                top:0px;
+                padding: 0;
+            }
  
 /* Estilos #nav-mobile y lo ocultamos */
 #nav-mobile{
@@ -221,6 +251,119 @@ vertical-align: middle;
     height: auto;
 }
 
+
+/* Nosotros */
+#nosotros{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #848487;
+}
+#nosotros h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+#nosotros p{
+    text-align: justify;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 10px 0;
+}
+/* Mision vision */
+#vision-mision{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #848487;
+}
+#vision-mision h3{
+    font-size: 20px;
+}
+#vision-mision p{
+    text-align: justify;
+    font-size: 14px;
+    line-height: 19px;
+}
+/* page */
+#page{
+    margin: 50px 0px;
+    color: #848487;
+}
+#page h2{
+    font-size: 20px;
+    margin-left: 20px;
+    color: #3a3a3a;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+#page p{
+    text-align: justify;
+    font-size: 14px;
+    line-height: 19px;
+}
+.numbers{
+    margin-top: 40px;
+}
+span#button-icon{
+    margin-left: 20px;
+    padding: 10px 15px;
+    background: #b3cc57;
+    color: #ffffff;
+    font-size: 18px;
+}
+a.buttom::before{
+    content: url(library/img/003-buttom.png);
+    vertical-align: middle;
+}
+a.buttom::after{
+    content: url(library/img/004-buttom.png);
+    vertical-align: 
+}
+a.buttom{
+    text-decoration: none;
+    color: #3a3a3a;
+    font-weight: 600;
+}
+a.buttom:hover{
+    color: #848487;
+}
+a.buttom::before,a.buttom::after, a.buttom{
+    vertical-align: middle;
+    display: inline-block;
+}
+div.spacing p{
+    margin-bottom: 35px;
+
+}
+.border-gray{
+    border: 3px solid #717175;
+}
+iframe.border-gray{
+    margin-bottom: 20px;
+}
+#contac{
+    margin-left: 50px;
+}
+#contac p{
+    margin-bottom:5px;
+}
+#contac p a{
+    text-decoration: none;
+    color: #848487;
+}
+.icon-map::before{
+    content: url(library/img/icon-map.png);
+}
+.icon-sms::before{
+    content: url(library/img/icon-sms.png);
+}
+.icon-tel::before{
+    content: url(library/img/icon-tel.png);
+}
+.icon-map::before,.icon-sms::before,.icon-tel::before,#contac p{
+    vertical-align: middle;
+}
+
+
 /* Smaller than standard 960 (devices and browsers) */
     @media only screen and (max-width: 959px) {}
 
@@ -258,7 +401,7 @@ vertical-align: middle;
                     height: auto;
                     line-height: normal;
                 }
-                #menu li a:hover{background:#2a2d33;}
+                #menu li a:hover{background: rgba(179,204,87,0.9);}
  
         /* Agregamos una animación al despligue del menú */
         #menu ul.open-menu{
@@ -316,7 +459,7 @@ vertical-align: middle;
                     height: auto;
                     line-height: normal;
                 }
-                #menu li a:hover{background:#2a2d33;}
+                #menu li a:hover{background: rgba(179,204,87,0.9);}
  
         /* Agregamos una animación al despligue del menú */
         #menu ul.open-menu{
@@ -337,6 +480,12 @@ vertical-align: middle;
         }
          #logo1{
             display: none;
+        }
+        #redes{
+            margin-top: 20px;
+        }
+        footer{
+            padding-bottom: 0px;
         }
     }
 
@@ -374,7 +523,7 @@ vertical-align: middle;
                     height: auto;
                     line-height: normal;
                 }
-                #menu li a:hover{background:#2a2d33;}
+                #menu li a:hover{background: rgba(179,204,87,0.9);}
  
         /* Agregamos una animación al despligue del menú */
         #menu ul.open-menu{
@@ -395,6 +544,12 @@ vertical-align: middle;
         }
          #logo1{
             display: none;
+        }
+        #redes{
+            margin-top: 20px;
+        }
+        footer{
+            padding-bottom: 0px;
         }
 
     }
@@ -432,8 +587,11 @@ vertical-align: middle;
                     padding: 15px 0;
                     height: auto;
                     line-height: normal;
+
                 }
-                #menu li a:hover{background:#2a2d33;}
+                #menu li a:hover{
+                background: rgba(179,204,87,0.9);
+                }
  
         /* Agregamos una animación al despligue del menú */
         #menu ul.open-menu{
@@ -456,6 +614,20 @@ vertical-align: middle;
         }
         #logo1{
             display: none;
+        }
+        #contenido{
+            padding-top: 150px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        #personas{
+            display: none;
+        }
+        #redes{
+            margin-top: 20px;
+        }
+        footer{
+            padding-bottom: 0px;
         }
     }
 

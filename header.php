@@ -48,20 +48,22 @@
 	
 	<div id="esquina-verde"></div>
 	<div class="container">
-		<a id="logo1" href="#"><img src="<?php bloginfo('template_url' ); ?>/library/img/logo.png" alt=""></a>
+		<a id="logo1" href="<?php echo home_url('/' ); ?>"><img src="<?php bloginfo('template_url' ); ?>/library/img/logo.png" alt=""></a>
 	</div>
 	<header>
-      <a id="logo" href="#"></a>
-        <nav id="menu"><a class="nav-mobile" id="nav-mobile" href="#"></a>
+      <a id="logo" href="<?php echo home_url('/' ); ?>"></a>
+        <nav id="menu"><a class="nav-mobile" id="nav-mobile" href="<?php echo home_url('/' ); ?>"></a>
             <ul>
-	            <li><a href="#">Inicio</a></li>
-	            <li><a href="#">Nosotros</a></li>
+	            <li><a href="<?php echo home_url('/' ); ?>">Inicio</a></li>
+	            <li><a href="<?php echo home_url('/nosotros' ); ?>">Nosotros</a></li>
 	            <li><a href="#">Servicios</a>
 					<ul>
-						<li><a href="hola">hola</a></li>
+						<li><a href="<?php echo home_url('/diseno-construccion' ); ?>">Diseño y construcción</a></li>
+						<li><a href="<?php echo home_url('/remodelacion-mantenimiento' ); ?>">Remodelación y mantenimiento</a></li>
+						<li><a href="<?php echo home_url('/planeacion-presupuestos' ); ?>">Planeación de presupuestos</a></li>
 					</ul>
 	            </li>
-	            <li><a href="#">Contactenos</a></li>
+	            <li><a href="<?php echo home_url('/contactenos' ); ?>">Contactenos</a></li>
             </ul>
         </nav>
     </header>
