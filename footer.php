@@ -1,12 +1,12 @@
 <!-- Footer -->
     <footer>
       <div class="container">
-        <p>Calle 38D Sur No. 72Q - 71 piso 1 / Bogotá - Colombia</p>
-        <a href="mailto:eme@eme-construcciones.com">eme@eme-construcciones.com</a>
-        <p>804 4657 - 319 2671554</p>
+        <p><?php echo of_get_option( 'dir', 'no entry' ); ?></p>
+        <a href="mailto:<?php echo of_get_option( 'email', 'no entry' ); ?>"><?php echo of_get_option( 'email', 'no entry' ); ?></a>
+        <p><?php echo of_get_option( 'tel', 'no entry' ); ?></p>
         <ul id="redes">
-          <li><a href="#"><img src="<?php bloginfo('template_url' ); ?>/library/img/facebook.png" alt=""></a></li>
-          <li><a href="#"><img src="<?php bloginfo('template_url' ); ?>/library/img/twitter.png" alt=""></a></li>
+          <li><a target="_blank" href="<?php echo of_get_option( 'facebook', 'no entry' ); ?>"><img src="<?php bloginfo('template_url' ); ?>/library/img/facebook.png" alt=""></a></li>
+          <li><a target="_blank" href="<?php echo of_get_option( 'twitter', 'no entry' ); ?>"><img src="<?php bloginfo('template_url' ); ?>/library/img/twitter.png" alt=""></a></li>
         </ul>
       </div>
     </footer>
@@ -67,8 +67,8 @@
         navigation : false, // Show next and prev buttons
         slideSpeed : 300,
         paginationSpeed : 400,
-        singleItem:true
-   
+        singleItem:true,
+        AutoPlay: 5000
         // "singleItem:true" is a shortcut for:
         // items : 1, 
         // itemsDesktop : false,

@@ -9,15 +9,12 @@
         <div class="row">
           
           <div class="five columns">
-            <img class="twelve columns" src="<?php bloginfo('template_url' ); ?>/library/img/remodelacion-mantenimiento.png" alt="">
+            <img class="twelve columns" src="<?php echo of_get_option( 'img-rem-mant', 'no entry' ); ?>" alt="">
           </div>
 
           <div class="six columns">
             <br>
-            <p>Remodelación completa de su vivienda, oficina o espacio comercial, Reformas puntuales de su cocina, baño, piso, Cielorraso, iluminación, pintura de muros, Ampliaciones de espacios y  Adecuaciones Eléctricas e hidrosanitarias.</p>
-
-            <p>Mantenimiento y rehabilitación de viviendas y edificios, impermeabilización de cubiertas y patios, pinturas exteriores de fachadas, tratamiento de humedades, habilitación de bajantes, desagües, fontanería en general.
-            </p>
+            <p><?php echo of_get_option( 'txt-rem-mant', 'no entry' ); ?></p>
           </div>
         </div>
         <br>
@@ -29,8 +26,8 @@
              <span id="button-icon">2</span>
            </div>
            <div class="five columns">
-            <p> Levantamiento Arquitectónico, de información y necesidades.</p>
-            <p> Diseño arquitectónico, renders y diseños técnicos.</p>
+            <p> <?php echo of_get_option( 'it-rem-mant-1', 'no entry' ); ?></p>
+            <p> <?php echo of_get_option( 'it-rem-mant-2', 'no entry' ); ?></p>
            </div>
 
            <div class="one columns">
@@ -39,8 +36,8 @@
              <span id="button-icon">4</span>
            </div>
            <div class="five columns">
-            <p> Presupuesto y programación de obra.</p>
-            <p> Remodelación de espacios y entrega final al cliente.</p>
+            <p> <?php echo of_get_option( 'it-rem-mant-3', 'no entry' ); ?></p>
+            <p> <?php echo of_get_option( 'it-rem-mant-4', 'no entry' ); ?></p>
             <br><br>
             <a class="buttom" href="<?php echo home_url('/contactenos' ); ?>"> Cotice con nosotros </a>
            </div>

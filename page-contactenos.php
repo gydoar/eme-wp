@@ -61,12 +61,12 @@
         
         <div class="row">
           <div class="six columns">
-           <iframe class="border-gray twelve columns" width="457" height="214" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps?q=4.705647,-74.096649&amp;num=1&amp;ie=UTF8&amp;t=m&amp;z=14&amp;ll=4.705647,-74.096646&amp;output=embed"></iframe>
+           <iframe class="border-gray twelve columns" width="457" height="214" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=Calle+38D+Sur+No.+72Q+-+71&amp;aq=&amp;sll=4.663582,-74.04544&amp;sspn=0.007699,0.011179&amp;ie=UTF8&amp;hq=&amp;hnear=Calle+38+%23+8-71,+Bogot%C3%A1,+Cundinamarca,+Colombia&amp;ll=4.625892,-74.067153&amp;spn=0.0077,0.011179&amp;t=m&amp;z=14&amp;output=embed"></iframe>
 
           <div id="contac">
-             <p class="icon-map">&nbsp;&nbsp;&nbsp;Calle 38D Sur No. 72Q - 71 piso 1 / Bogotá - Colombia </p>
-             <p class="icon-sms">&nbsp;&nbsp;<a href="mailto:eme@eme-construcciones.com">eme@eme-construcciones.com</a></p>
-             <p class="icon-tel">&nbsp;&nbsp;&nbsp;&nbsp;804 4657 - 319 2671554</p>
+             <p class="icon-map">&nbsp;&nbsp;&nbsp;<?php echo of_get_option( 'dir', 'no entry' ); ?></p>
+             <p class="icon-sms">&nbsp;&nbsp;<a href="mailto:<?php echo of_get_option( 'email', 'no entry' ); ?>"><?php echo of_get_option( 'email', 'no entry' ); ?></a></p>
+             <p class="icon-tel">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo of_get_option( 'tel', 'no entry' ); ?></p>
           </div>
            
           </div>

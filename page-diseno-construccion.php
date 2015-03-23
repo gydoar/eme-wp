@@ -9,12 +9,12 @@
         <div class="row">
           
           <div class="five columns">
-            <img class="twelve columns" src="<?php bloginfo('template_url' ); ?>/library/img/diseno-construccion-page.png" alt="">
+            <img class="twelve columns" src="<?php echo of_get_option( 'img-dis-const', 'no entry' ); ?>" alt="">
           </div>
 
           <div class="six columns">
             <br>
-            <p>Construcción de obras con coordinación técnica desde el levantamiento de sus necesidades hasta la entrega final de las obras de proyectos de vivienda, comercio  e institucional.</p>
+            <p><?php echo of_get_option( 'txt-dis-const', 'no entry' ); ?></p>
           </div>
         </div>
         <br>
@@ -26,8 +26,8 @@
              <span id="button-icon">2</span>
            </div>
            <div class="five columns">
-            <p> Levantamiento de la información y  necesidades.</p>
-            <p> Diseño arquitectónico, estructural, eléctrico e hidrosanitario y  realización de renders.</p>
+            <p> <?php echo of_get_option( 'it-dis-const-1', 'no entry' ); ?></p>
+            <p> <?php echo of_get_option( 'it-dis-const-2', 'no entry' ); ?></p>
            </div>
 
            <div class="one columns">
@@ -36,8 +36,8 @@
              <span id="button-icon">4</span>
            </div>
            <div class="five columns">
-            <p> Realización del presupuesto y programación de obra.</p>
-            <p> Construcción de obra y entrega final al cliente.</p>
+            <p> <?php echo of_get_option( 'it-dis-const-3', 'no entry' ); ?></p>
+            <p> <?php echo of_get_option( 'it-dis-const-4', 'no entry' ); ?></p>
             <br><br>
             <a class="buttom" href="<?php echo home_url('/contactenos' ); ?>"> Cotice con nosotros </a>
            </div>

@@ -53,6 +53,7 @@ header{
                 background: rgba(179,204,87,0.9);
                 padding: 0;
                 height: 150px;
+                width: 100%;
             }
             #menu li:hover > ul {
                 display:block;
@@ -162,6 +163,7 @@ header{
 #contenido a, #contenido a img{
     vertical-align: middle;
 }
+
 
 /* Personas */
 #personas{
