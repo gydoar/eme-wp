@@ -9,8 +9,13 @@ header{
 
 #logo1{
     position: absolute;
-    z-index: 200;
+    z-index: 4;
     margin-top: -50px;
+    background: url(library/img/esquina-blanca.png) no-repeat;
+    width: 100%;
+    background-position-x:-450px; 
+    height: 151px;
+    padding: 20px 0 20px 30px;
 }
  
 /* Nuestro nav con id #menu lo flotaremos a la derecha*/
@@ -111,6 +116,7 @@ header{
     background-position-x:600px; 
     z-index: 2;
 }
+
 
 /* Estilos #nav-mobile y lo ocultamos */
 #nav-mobile{

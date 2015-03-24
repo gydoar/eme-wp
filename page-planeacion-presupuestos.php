@@ -30,10 +30,10 @@
              <span id="button-icon">4</span>
            </div>
            <div class="five columns spacing">
-            <p> Estimativo preliminar de costos.</p>
-            <p> Revisión, valoración o realización Cantidades de obra.</p>
-            <p> Análisis Precios Unitarios.</p>
-            <p> Cotizaciones y listado de precios de materiales.</p>
+            <p> <?php echo of_get_option( 'it-pla-press-1', 'no entry' ); ?></p>
+            <p> <?php echo of_get_option( 'it-pla-press-2', 'no entry' ); ?></p>
+            <p> <?php echo of_get_option( 'it-pla-press-3', 'no entry' ); ?></p>
+            <p> <?php echo of_get_option( 'it-pla-press-4', 'no entry' ); ?></p>
            </div>
 
            <div class="one columns">
@@ -44,9 +44,9 @@
              <span id="button-icon">7</span>
            </div>
            <div class="five columns spacing">
-            <p> Revisión y validación de presupuestos de obra.</p>
-            <p> Presupuesto definitivo de obra.</p>
-            <p> Análisis del A.I.U.</p>
+            <p> <?php echo of_get_option( 'it-pla-press-5', 'no entry' ); ?></p>
+            <p> <?php echo of_get_option( 'it-pla-press-6', 'no entry' ); ?></p>
+            <p> <?php echo of_get_option( 'it-pla-press-7', 'no entry' ); ?></p>
             <br><br>
            </div>
           </div>
@@ -59,8 +59,8 @@
              <span id="button-icon">2</span>
            </div>
            <div class="five columns spacing">
-            <p> Programación de obra.</p>
-            <p> Plan de inversión del anticipo.</p>
+            <p> <?php echo of_get_option( 'it-pla-press-8', 'no entry' ); ?></p>
+            <p> <?php echo of_get_option( 'it-pla-press-9', 'no entry' ); ?></p>
            </div>
 
            <div class="one columns">
@@ -68,7 +68,7 @@
              <br><br>
            </div>
            <div class="five columns spacing">
-            <p> Programa de flujo de inversión mes a mes.</p>
+            <p> <?php echo of_get_option( 'it-pla-press-10', 'no entry' ); ?></p>
             <br><br>
            </div>
           </div>
@@ -79,7 +79,7 @@
              <span id="button-icon">1</span>
            </div>
            <div class="five columns spacing">
-            <p> Especificaciones de obra.</p>
+            <p> <?php echo of_get_option( 'it-pla-press-11', 'no entry' ); ?></p>
            </div>
            <div class="one columns">
             <br><br>

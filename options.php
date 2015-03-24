@@ -432,6 +432,84 @@ function optionsframework_options() {
 		'std' => 'Analizamos los costos de construcción de su vivienda o edificio mediante la medición de cantidades de obra y definimos la duración en el tiempo de las diferentes actividades que conforman la construcción del proyecto y el flujo de desembolsos que se hacen durante la etapa de construcción.',
 		'type' => 'textarea'
 	);
+
+	$options[] = array(
+		'name' => __( 'Texto item 1', 'theme-textdomain' ),
+		'desc' => __( '', 'theme-textdomain' ),
+		'id' => 'it-pla-press-1',
+		'std' => 'Estimativo preliminar de costos.',
+		'type' => 'text'
+	);
+	$options[] = array(
+		'name' => __( 'Texto item 2', 'theme-textdomain' ),
+		'desc' => __( '', 'theme-textdomain' ),
+		'id' => 'it-pla-press-2',
+		'std' => 'Revisión, valoración o realización Cantidades de obra.',
+		'type' => 'text'
+	);
+	$options[] = array(
+		'name' => __( 'Texto item 3', 'theme-textdomain' ),
+		'desc' => __( '', 'theme-textdomain' ),
+		'id' => 'it-pla-press-3',
+		'std' => 'Análisis Precios Unitarios.',
+		'type' => 'text'
+	);
+	$options[] = array(
+		'name' => __( 'Texto item 4', 'theme-textdomain' ),
+		'desc' => __( '', 'theme-textdomain' ),
+		'id' => 'it-pla-press-4',
+		'std' => 'Cotizaciones y listado de precios de materiales.',
+		'type' => 'text'
+	);
+	$options[] = array(
+		'name' => __( 'Texto item 5', 'theme-textdomain' ),
+		'desc' => __( '', 'theme-textdomain' ),
+		'id' => 'it-pla-press-5',
+		'std' => 'Revisión y validación de presupuestos de obra.',
+		'type' => 'text'
+	);
+	$options[] = array(
+		'name' => __( 'Texto item 6', 'theme-textdomain' ),
+		'desc' => __( '', 'theme-textdomain' ),
+		'id' => 'it-pla-press-6',
+		'std' => 'Presupuesto definitivo de obra.',
+		'type' => 'text'
+	);
+	$options[] = array(
+		'name' => __( 'Texto item 7', 'theme-textdomain' ),
+		'desc' => __( '', 'theme-textdomain' ),
+		'id' => 'it-pla-press-7',
+		'std' => 'Análisis del A.I.U.',
+		'type' => 'text'
+	);
+	$options[] = array(
+		'name' => __( 'Texto item 8', 'theme-textdomain' ),
+		'desc' => __( '', 'theme-textdomain' ),
+		'id' => 'it-pla-press-8',
+		'std' => 'Programación de obra.',
+		'type' => 'text'
+	);
+	$options[] = array(
+		'name' => __( 'Texto item 9', 'theme-textdomain' ),
+		'desc' => __( '', 'theme-textdomain' ),
+		'id' => 'it-pla-press-9',
+		'std' => 'Plan de inversión del anticipo.',
+		'type' => 'text'
+	);
+	$options[] = array(
+		'name' => __( 'Texto item 10', 'theme-textdomain' ),
+		'desc' => __( '', 'theme-textdomain' ),
+		'id' => 'it-pla-press-10',
+		'std' => 'Programa de flujo de inversión mes a mes.',
+		'type' => 'text'
+	);
+	$options[] = array(
+		'name' => __( 'Texto item 11', 'theme-textdomain' ),
+		'desc' => __( '', 'theme-textdomain' ),
+		'id' => 'it-pla-press-11',
+		'std' => 'Especificaciones de obra.',
+		'type' => 'text'
+	);
 	// contacto
 	$options[] = array(
 		'name' => __( 'CONTACTO', 'theme-textdomain' ),

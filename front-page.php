@@ -48,7 +48,7 @@
     <!-- Personas -->
     <div id="personas">
       <div class="container">
-        <div class="offset-by-two eight columns"id="slider1">
+        <div class="offset-by-two eight columns" id="slider1">
           <div class="viewport">
             <ul class="overview">
               <li>
@@ -58,7 +58,7 @@
                 <p><?php echo of_get_option( 'texto-ing-1', 'no entry' ); ?></p>
               </li>
               <li>
-                  <h3><img src="<?php bloginfo('template_url' ); ?>/library/img/003.png" alt=""><?php echo of_get_option( 'nom-ing-2', 'no entry' ); ?><img src="<?php bloginfo('template_url' ); ?>/library/img/004.png" alt=""></h3>
+                  <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="<?php bloginfo('template_url' ); ?>/library/img/003.png" alt=""><?php echo of_get_option( 'nom-ing-2', 'no entry' ); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="<?php bloginfo('template_url' ); ?>/library/img/004.png" alt=""></h3>
                     <span><?php echo of_get_option( 'cargo-ing-2', 'no entry' ); ?></span>
                 <br><br>
                 <p><?php echo of_get_option( 'texto-ing-2', 'no entry' ); ?></p>
