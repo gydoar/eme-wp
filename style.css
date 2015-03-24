@@ -632,6 +632,12 @@ iframe.border-gray{
         footer{
             padding-bottom: 0px;
         }
+        #corchete{
+            display: none;
+        }
+        #button-icon{
+            display: none;
+        }
     }
 
    

@@ -426,12 +426,10 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
-		'name' => __( 'Texto Remodelacion y Mantenimiento', 'theme-textdomain' ),
+		'name' => __( 'Texto Planeacion y Presupuestos', 'theme-textdomain' ),
 		'desc' => __( '', 'theme-textdomain' ),
-		'id' => 'txt-rem-mant',
-		'std' => 'Remodelación completa de su vivienda, oficina o espacio comercial, Reformas puntuales de su cocina, baño, piso, Cielorraso, iluminación, pintura de muros, Ampliaciones de espacios y Adecuaciones Eléctricas e hidrosanitarias.
-			</br></br>
-			Mantenimiento y rehabilitación de viviendas y edificios, impermeabilización de cubiertas y patios, pinturas exteriores de fachadas, tratamiento de humedades, habilitación de bajantes, desagües, fontanería en general.',
+		'id' => 'txt-pla-pres',
+		'std' => 'Analizamos los costos de construcción de su vivienda o edificio mediante la medición de cantidades de obra y definimos la duración en el tiempo de las diferentes actividades que conforman la construcción del proyecto y el flujo de desembolsos que se hacen durante la etapa de construcción.',
 		'type' => 'textarea'
 	);
 	// contacto

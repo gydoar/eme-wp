@@ -9,12 +9,12 @@
         <div class="row">
           
           <div class="five columns">
-            <img class="twelve columns" src="<?php bloginfo('template_url' ); ?>/library/img/planeacion-presupuesto.png" alt="">
+            <img class="twelve columns" src="<?php echo of_get_option( 'img-pla-pres', 'no entry' ); ?>" alt="">
           </div>
 
           <div class="six columns">
             <br>
-            <p>Analizamos los costos de construcción de su vivienda o edificio mediante la medición de cantidades de obra y definimos la duración en el tiempo de las diferentes actividades que conforman la construcción del proyecto y el flujo de desembolsos que se hacen durante la etapa de construcción.</p>
+            <p><?php echo of_get_option( 'txt-pla-pres', 'no entry' ); ?></p>
           </div>
         </div>
         <br>
