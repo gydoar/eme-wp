@@ -48,6 +48,7 @@
 <body>
 	
 	<div id="esquina-verde"></div>
+	<div id="esquina-blanca"></div>
 	<div class="container">
 		<a id="logo1" href="<?php echo home_url('/' ); ?>"><img src="<?php bloginfo('template_url' ); ?>/library/img/logo.png" alt=""></a>
 	</div>
