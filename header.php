@@ -54,7 +54,7 @@
 	<div class="container">
 		<a id="logo1" href="<?php echo home_url('/' ); ?>"><img src="<?php bloginfo('template_url' ); ?>/library/img/logo.png" alt=""></a>
 	</div>
-	<header>
+	<header class="container">
       <a id="logo" href="<?php echo home_url('/' ); ?>"></a>
         <nav id="menu"><a class="nav-mobile" id="nav-mobile" href="<?php echo home_url('/' ); ?>"></a>
             <ul>
